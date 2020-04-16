@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap');
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fullpage {
+    height: 100%;
+}
+
+#introText1 {
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+#introText2 {
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+#rightPaneInfo {
+    padding-right: 100px;
+}
+
+#leftPaneInfo {
+    padding-left: 100px;
+}
+
+button {
+    font-weight: 700;
+    letter-spacing: normal;
+}
+
+
+/* Animations and effects */
+
+.elementor-animation-grow {
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.elementor-animation-grow:hover {
+    transform: scale(1.1);
+}
+
+.color-change-3x {
+    animation: color-change-3x 1.0s linear both
+}
+
+.color-change-3xa {
+    animation: color-change-3x 1.0s linear reverse both
+}
+
+@keyframes color-change-3x {
+    0% {
+        background: #000000
+    }
+    50% {
+        background: #0f0f0f
+    }
+    100% {
+        background: #212121
+    }
+}
+
+@keyframes color-change-3xa {
+    0% {
+        background: #212121
+    }
+    50% {
+        background: #0f0f0f
+    }
+    100% {
+        background: #000000
+    }
+}
+
+.text-blur-out {
+    animation: text-blur-out 0.9s cubic-bezier(.55, .085, .68, .53) both
+}
+
+@keyframes text-blur-out {
+    0% {
+        filter: blur(.01)
+    }
+    100% {
+        filter: blur(5px) opacity(1)
+    }
+}
+
+.slide-out-right {
+    animation: slide-out-right .5s cubic-bezier(.55, .085, .68, .53) both
+}
+
+@keyframes slide-out-right {
+    0% {
+        transform: translateX(0);
+        opacity: 1
+    }
+    100% {
+        transform: translateX(1000px);
+        opacity: 0
+    }
+}
+
+.wobble-hor-bottom {
+    animation: wobble-hor-bottom 1.5s both
+}
+
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        transform: translateX(0);
+        transform-origin: 50% 50%
+    }
+    15% {
+        transform: translateX(-30px) rotate(-6deg)
+    }
+    30% {
+        transform: translateX(15px) rotate(6deg)
+    }
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg)
+    }
+    60% {
+        transform: translateX(9px) rotate(2.4deg)
+    }
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg)
+    }
+}
